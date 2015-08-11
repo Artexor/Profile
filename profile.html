@@ -125,6 +125,8 @@
         <meta name="if:Post Tags" content="1"/>
         <meta name="if:Post Share" content="1"/>
         <meta name="if:Post Notes" content="1"/>
+        <meta name="color:Intro Loading Background" content="#000000"/>
+        <meta name="color:Intro Loading Bar" content="#fffff3"/>
         <meta name="color:Modal Post Background" content="#000000"/>
         <meta name="color:Posts Title" content="#ffffff"/>
         <meta name="color:Post Link" content="#a6a6a6"/>
@@ -583,7 +585,7 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background: #000000;
+            background: {color:Intro Loading Background};
             z-index: 10000;
             visibility: visible;
             opacity: 1;
@@ -619,7 +621,7 @@
             height: 20px;
         }
         .loading-icon .rect {
-            background-color: #FFFFF3;
+            background-color: {color:Intro Loading Bar};
             height: 100%;
             width: 4px;
             float: left;
@@ -1888,7 +1890,6 @@
         {CustomCSS}
         
     </style>
-        <link rel="stylesheet" type="text/css" href="http://themes.artexor.com/profile/main.css">
     </head>
     
     <body{block:PermalinkPage} class="post-page"{/block:PermalinkPage} {block:IndexPage} class="index-page"{/block:IndexPage}>
